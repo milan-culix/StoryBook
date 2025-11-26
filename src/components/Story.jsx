@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import { stories } from '../data/stories'
 
 function Story() {
@@ -18,13 +18,13 @@ function Story() {
       const words = story.content.split(' ')
       const totalPages = Math.ceil(words.length / wordsPerPage)
       const pageArray = []
-      
+
       for (let i = 0; i < totalPages; i++) {
         const start = i * wordsPerPage
         const end = start + wordsPerPage
         pageArray.push(words.slice(start, end).join(' '))
       }
-      
+
       setPages(pageArray)
       setCurrentPage(1)
     }
@@ -61,7 +61,17 @@ function Story() {
   const isLastPage = currentPage === pages.length
 
   return (
+
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-8 px-4 flex items-center justify-center">
+      <Link
+        to={`/category/${encodeURIComponent(decodedCategory)}`}
+        className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-4 transition-colors"
+      >
+        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Home
+      </Link>
       <div className="w-full flex items-center justify-center">
         {/* Book-like Container */}
         <div className="bg-white rounded-lg shadow-2xl overflow-hidden w-full max-w-[95%] lg:w-[70vw] lg:max-w-[70vw] mx-auto">
@@ -87,15 +97,15 @@ function Story() {
               </div>
 
               <div className="flex-1 overflow-y-auto overflow-x-hidden mb-6 scrollbar-thin pr-2">
-              <div className="text-gray-800 leading-relaxed text-lg font-serif animate-fade-in">
-  {(pages[currentPage - 1] || '')
-    .split('\n\n')
-    .map((para, idx) => (
-      <p key={idx} className="mb-4">
-        {para}
-      </p>
-    ))}
-</div>
+                <div className="text-gray-800 leading-relaxed text-lg font-serif animate-fade-in">
+                  {(pages[currentPage - 1] || '')
+                    .split('\n\n')
+                    .map((para, idx) => (
+                      <p key={idx} className="mb-4">
+                        {para}
+                      </p>
+                    ))}
+                </div>
               </div>
 
               {/* Pagination and Navigation */}
@@ -105,11 +115,10 @@ function Story() {
                     <button
                       onClick={handlePrevious}
                       disabled={currentPage === 1}
-                      className={`flex items-center px-4 py-2 rounded-lg transition-all ${
-                        currentPage === 1
+                      className={`flex items-center px-4 py-2 rounded-lg transition-all ${currentPage === 1
                           ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                           : 'bg-blue-600 text-white hover:bg-blue-700 transform hover:scale-105'
-                      }`}
+                        }`}
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -124,11 +133,10 @@ function Story() {
                     <button
                       onClick={handleNext}
                       disabled={currentPage === pages.length}
-                      className={`flex items-center px-4 py-2 rounded-lg transition-all ${
-                        currentPage === pages.length
+                      className={`flex items-center px-4 py-2 rounded-lg transition-all ${currentPage === pages.length
                           ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                           : 'bg-blue-600 text-white hover:bg-blue-700 transform hover:scale-105'
-                      }`}
+                        }`}
                     >
                       Next
                       <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
