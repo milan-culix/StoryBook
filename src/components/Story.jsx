@@ -61,21 +61,12 @@ function Story() {
   const isLastPage = currentPage === pages.length
 
   return (
-
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-8 px-4 flex items-center justify-center">
-      <Link
-        to={`/category/${encodeURIComponent(decodedCategory)}`}
-        className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-4 transition-colors"
-      >
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
-        Back to Home
-      </Link>
-      <div className="w-full flex items-center justify-center">
-        {/* Book-like Container */}
-        <div className="bg-white rounded-lg shadow-2xl overflow-hidden w-full max-w-[95%] lg:w-[70vw] lg:max-w-[70vw] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-[80vh] lg:h-[80vh] min-h-[600px] overflow-hidden">
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-8 px-4 flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
+          {/* Book-like Container */}
+          <div className="bg-white rounded-lg shadow-2xl overflow-hidden w-full max-w-[95%] lg:w-[70vw] lg:max-w-[70vw] mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 h-[80vh] lg:h-[80vh] min-h-[600px] overflow-hidden">
             {/* Left Page - Image */}
             <div className="bg-gradient-to-br from-amber-100 to-orange-100 p-8 flex items-center justify-center border-r-2 border-amber-200 overflow-y-auto overflow-x-hidden">
               <div className="w-full h-full flex items-center justify-center animate-fade-in min-h-full">
@@ -89,6 +80,17 @@ function Story() {
 
             {/* Right Page - Text */}
             <div className="bg-amber-50 p-8 md:p-12 flex flex-col overflow-hidden">
+              <div className="mb-4 flex-shrink-0">
+                <Link
+                  to={`/category/${encodeURIComponent(decodedCategory)}`}
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Home
+                </Link>
+              </div>
               <div className="mb-6 flex-shrink-0">
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2 font-serif">
                   {story.title}
@@ -169,6 +171,7 @@ function Story() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
