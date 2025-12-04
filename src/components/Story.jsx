@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { stories } from '../data/stories'
+import { stories } from '../data/stories.json'
 
 function Story() {
   const { categoryName, storyId } = useParams()

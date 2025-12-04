@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { categories, stories } from '../data/stories.json'
 
 function Home() {
@@ -18,9 +18,35 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50">
+      {/* Header with Glassmorphism */}
+      <header className="sticky top-0 z-50">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-50/80 via-blue-50/80 to-indigo-50/80 backdrop-blur-xl border-b border-white/20 shadow-lg shadow-purple-500/10"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                Tales & Stories
+              </h1>
+            </div>
+            <div className="flex items-center">
+              <Link
+                to="/admin/login"
+                className="group flex items-center space-x-2 px-5 py-2.5 bg-white/20 backdrop-blur-md border-2 border-white/30 rounded-lg hover:bg-white/50 hover:border-purple-400 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 active:scale-105"
+              >
+                <svg className="w-5 h-5 text-purple-700 group-hover:text-purple-600 group-hover:scale-110 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span className="text-purple-700 group-hover:text-purple-600 font-bold text-sm transition-all duration-300">Admin</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white">
         <div className="absolute inset-0 bg-black opacity-20"></div>
+        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 animate-slide-down">

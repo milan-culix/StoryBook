@@ -105,3 +105,62 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Admin Button Animated Gradient Border */
+.admin-button {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.admin-button-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background-size: 25% 100%;
+  transform: translateX(-5%);
+  transition: transform 0.25s ease-out;
+  animation: gradient-border-animation 0.75s linear infinite;
+  animation-play-state: paused;
+}
+
+.admin-button:hover .admin-button-border {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  transform: translateX(0%);
+}
+
+@keyframes gradient-border-animation {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+/* Hero Section Animated Gradients - Subtle */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.15;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 0.25;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 0.15;
+  }
+}
+
+.animate-gradient-flow {
+  background-size: 300% 300%;
+  animation: gradient-flow 15s ease-in-out infinite;
+}
+
