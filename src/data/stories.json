@@ -21,7 +21,7 @@
   "stories": {
     "Historical": [
       {
-        "id": "historical-1",
+        "id": "historical-the-last-letter",
         "title": "The Last Letter",
         "category": "Historical",
         "image": "https://images.unsplash.com/vector-1740278207824-da0b0468066b?q=80&w=1074&auto=format&fit=crop",
@@ -30,7 +30,7 @@
     ],
     "Horror": [
       {
-        "id": "horror-1",
+        "id": "horror-the-whisper-in-the-attic",
         "title": "The Whisper in the Attic",
         "category": "Horror",
         "image": "https://plus.unsplash.com/premium_vector-1711987886030-c2eb0a44b37d?q=80&w=880&auto=format&fit=crop",
@@ -39,7 +39,7 @@
     ],
     "Real-life": [
       {
-        "id": "real-life-1",
+        "id": "real-life-the-coffee-shop-connection",
         "title": "The Coffee Shop Connection",
         "category": "Real-life",
         "image": "https://plus.unsplash.com/premium_vector-1721665299241-9139c2d4ebf1?q=80&w=1170&auto=format&fit=crop",
@@ -48,7 +48,7 @@
     ],
     "Fanfiction": [
       {
-        "id": "fanfiction-1",
+        "id": "fanfiction-the-unexpected-alliance",
         "title": "The Unexpected Alliance",
         "category": "Fanfiction",
         "image": "https://images.unsplash.com/vector-1739202818384-67e5c0b163df?q=80&w=1632&auto=format&fit=crop",
@@ -57,7 +57,7 @@
     ],
     "Slice of Life": [
       {
-        "id": "slice-of-life-1",
+        "id": "slice-of-life-sunday-morning-pancakes",
         "title": "Sunday Morning Pancakes",
         "category": "Slice of Life",
         "image": "https://plus.unsplash.com/premium_vector-1745292933875-d7dc07819d7c?q=80&w=1098&fit=crop&",
@@ -66,14 +66,14 @@
     ],
     "Magical Realism": [
       {
-        "id": "magical-realism-1",
+        "id": "magical-realism-the-library-of-lost-things",
         "title": "The Library of Lost Things",
         "category": "Magical Realism",
         "image": "https://plus.unsplash.com/premium_vector-1689096693639-006a48692fca?q=80&w=1014&auto=format&fit=crop",
         "content": "There was a library in the old part of town that most people walked past without noticing. Its sign was faded, its windows dusty, and its door always seemed to be locked. But if you knew the right time to visit—precisely at sunset on the third Tuesday of each month—the door would open for you.\n\nElena discovered this by accident. She had been searching for a book her grandmother had mentioned, something about lost memories. The librarian, an ancient woman with silver hair and knowing eyes, simply smiled when Elena asked about it.\n\n\"Some things aren't found by searching,\" the librarian said. \"They find you when you're ready.\"\n\nElena didn't understand until she wandered into a section she hadn't noticed before. The sign above read \"Lost Things.\" The shelves were filled with objects that shouldn't have been in a library: a child's lost tooth, a wedding ring, a single blue sock, a photograph of people no one remembered.\n\nBut it was the books that fascinated Elena. Each one was bound in a different material—some in leather, others in fabric, a few in what looked like tree bark. She pulled one from the shelf, and as she opened it, she found herself standing in her grandmother's kitchen, watching her younger self learn to make bread.\n\nThe memory had been lost for years, buried under the weight of time and grief. But here it was, preserved in a book, waiting for her to remember.\n\nElena spent hours in that section, finding memories she didn't know she'd lost: her first day of school, a conversation with her father before he passed away, the moment she realized she was in love.\n\n\"Everything that's ever been lost finds its way here,\" the librarian explained. \"Lost memories, lost opportunities, lost moments. They're all waiting to be found again.\"\n\nElena became a regular visitor. She learned that the library wasn't just for finding what was lost—it was also a place to leave things behind. She wrote letters to people she'd never sent them to, placed photographs of moments she wanted to preserve, and even left behind a small piece of her heart when it was broken.\n\nThe library existed outside normal time and space. Hours inside felt like minutes outside, and sometimes, when Elena emerged, she found that years had passed. But the library was always there, waiting, a sanctuary for the lost and the found.\n\nAs Elena grew older, she realized that the library wasn't just a place—it was a reminder that nothing is ever truly lost. Everything exists somewhere, waiting for the right moment to be rediscovered."
       },
       {
-        "id": "magical-realism-the-lanterns-of-san-",
+        "id": "magical-realism-the-lanterns-of-san-lazaro",
         "title": "The Lanterns of San Lázaro",
         "category": "Magical Realism",
         "image": "https://plus.unsplash.com/premium_vector-1764036212835-6730e069fd22?q=80&w=1074&auto=format&fit=crop",
@@ -82,7 +82,7 @@
     ],
     "Western": [
       {
-        "id": "western-1",
+        "id": "western-the-last-ride-to-redemption",
         "title": "The Last Ride to Redemption",
         "category": "Western",
         "image": "https://plus.unsplash.com/premium_vector-1743657840575-baba60123124?q=80&w=1074&auto=format&fit=crop",
@@ -91,7 +91,7 @@
     ],
     "Drama": [
       {
-        "id": "drama-1",
+        "id": "drama-the-inheritance",
         "title": "The Inheritance",
         "category": "Drama",
         "image": "https://plus.unsplash.com/premium_vector-1761299670779-eb0681ca4447?q=80&w=1567&auto=format&fit=crop",
@@ -100,7 +100,7 @@
     ],
     "Comedy": [
       {
-        "id": "comedy-1",
+        "id": "comedy-the-great-cake-catastrophe",
         "title": "The Great Cake Catastrophe",
         "category": "Comedy",
         "image": "https://plus.unsplash.com/premium_vector-1725864869576-72ec93915649?q=80&w=1074&auto=format&fit=crop",
@@ -109,7 +109,7 @@
     ],
     "Adventure": [
       {
-        "id": "adventure-1",
+        "id": "adventure-the-lost-temple-of-zephyr",
         "title": "The Lost Temple of Zephyr",
         "category": "Adventure",
         "image": "https://plus.unsplash.com/premium_vector-1730238780355-f3edabe81732?q=80&w=1170&auto=format&fit=crop",
@@ -118,7 +118,7 @@
     ],
     "Romance": [
       {
-        "id": "romance-1",
+        "id": "romance-the-bookstore-encounter",
         "title": "The Bookstore Encounter",
         "category": "Romance",
         "image": "https://plus.unsplash.com/premium_vector-1734063436102-f7b614e6a43a?q=80&w=1170&auto=format&fit=crop",
@@ -127,16 +127,23 @@
     ],
     "Crime": [
       {
-        "id": "crime-1",
+        "id": "crime-the-perfect-alibi",
         "title": "The Perfect Alibi",
         "category": "Crime",
         "image": "https://plus.unsplash.com/premium_vector-1727240941346-dbb1f44ab462?q=80&w=1171&auto=format&fit=crop",
         "content": "Detective Sarah Chen had seen a lot of crime scenes in her career, but this one was different. The victim, a wealthy businessman named Robert Sterling, had been found in his locked study, shot through the heart. The door had been locked from the inside, the windows were sealed, and there was no sign of forced entry.\n\nIt was, for all intents and purposes, an impossible crime.\n\nThe prime suspect was Sterling's business partner, Marcus Blackwood. They'd had a public argument the day before, and Blackwood stood to gain millions from Sterling's death. But Blackwood had an airtight alibi: he'd been at a charity gala fifty miles away, with hundreds of witnesses and security camera footage to prove it.\n\nSarah spent days going over the evidence. The bullet matched a gun registered to Blackwood, but that gun was in a locked safe in Blackwood's home, and he hadn't accessed it in weeks. The timing didn't work, the logistics didn't work, nothing made sense.\n\nIt was the small details that finally broke the case. Sarah noticed that Sterling's watch had stopped at 8:47 PM, but the security system showed the study door being locked at 9:15 PM. How could a dead man lock a door?\n\nThe answer came from an unexpected source: Sterling's assistant, a quiet woman named Emily who'd been overlooked in the investigation. She came forward with information that changed everything.\n\nSterling had been planning to fake his own death. He'd discovered that Blackwood was embezzling from their company, and he wanted to disappear with evidence that would put Blackwood in prison. But Blackwood had found out about the plan and turned it against him.\n\nThe \"impossible\" crime was actually a carefully orchestrated murder made to look like suicide. Blackwood had used Sterling's own plan against him, creating a scenario where Sterling's death would be ruled a suicide, and Blackwood would inherit everything.\n\nBut Blackwood had made one mistake: he'd been too clever. The perfect alibi, the locked room, the timing—it was all too perfect. And in trying to create the perfect crime, he'd created evidence of his own guilt.\n\nSarah pieced together the truth: Blackwood had an accomplice, someone who'd been at the gala with him but had slipped away long enough to commit the murder. The locked room was a red herring—Sterling had been killed elsewhere and moved to the study, with the door locked afterward to create the illusion.\n\nThe case took months to fully unravel, but in the end, Blackwood and his accomplice were both convicted. The perfect alibi wasn't perfect after all—it was just another piece of evidence in a web of lies.\n\nSarah learned that day that there's no such thing as a perfect crime. There's only evidence that hasn't been found yet, and truth that's waiting to be uncovered."
+      },
+      {
+        "id": "crime-blood-on-the-neon",
+        "title": "Blood on the Neon",
+        "category": "Crime",
+        "image": "https://plus.unsplash.com/premium_vector-1761083370800-a29dda102e25?q=80&w=1131&auto=format&fit=crop",
+        "content": "Rain hissed against the pavement like a long-kept secret, and Detective Eli Marlowe’s trenchcoat clung to him like a second skin as he crouched beside the body. The neon glow from the nearby diner cast the dead man’s face in a sickly pink hue, the knife still protruding from his chest glinting with malevolent promise. Marlowe’s fingers trembled not from the cold but from the note clutched in the victim’s hand—a single name, written in blood: *his own*.  \n\nThe victim was Eddie Voss, a small-time informant who’d promised Marlowe evidence linking the city’s drug trade to the police commissioner. Now Eddie’s lifeless eyes stared into the rain, his mouth frozen in a silent scream. Marlowe pocketed the note, the paper crinkling like a threat, and spotted a flash of movement in the diner’s fogged window. Inside, the scent of burnt coffee and grease hung thick, but the booth where Eddie had waited was empty—save for a half-smoked cigarette and a smeared fingerprint on the table.  \n\nBack at the precinct, Marlowe’s partner, Diaz, laughed off the bloodstained note. “Eddie was a rat. Probably screwed over the wrong guy.” But Marlowe’s gut churned when Diaz’s sleeve rode up, revealing a fresh scratch—the kind left by a desperate man’s nails. That night, Marlowe combed through Eddie’s files. A photograph fell out: Diaz, shaking hands with a known cartel enforcer, his smile sharp as a switchblade.  \n\nMarlowe faced a choice: report Diaz and risk his own life, or burn the photo and let the corruption fester. He stared at his badge, tarnished by years of compromise, then at Eddie’s bloodied note. *No more ghosts*, he thought. He loaded his service revolver.  \n\nThe confrontation erupted in a derelict warehouse, rain drumming the roof like a war chant. Diaz stood silhouetted against flickering fluorescents, gun raised. “You should’ve looked the other way, Eli.” Marlowe’s breath fogged the air. “Not anymore.” Shots rang out, muzzle flashes lighting the room like lightning. Diaz crumpled, but not before his bullet grazed Marlowe’s shoulder, pain searing like liquid fire.  \n\nBlood soaked Marlowe’s sleeve as he cuffed Diaz, the metallic tang mixing with the warehouse’s damp rot. Sirens wailed in the distance. Diaz spat, “You think this changes anything? The rot’s too deep.” Marlowe wiped rain from his face. “Maybe. But I’m done adding to it.”  \n\nAt dawn, Marlowe stood at Eddie’s graveside, the commissioner’s resignation headline blazing on his phone. The rain had washed the streets clean, yet his hands still smelled of gunpowder and blood. He tossed his badge into the open grave, watching it sink into the mud. *Some stains*, he thought, *never come out*.  \n\nThe city kept its secrets, but Marlowe walked away knowing the darkest ones were always written in red."
       }
     ],
     "Detective": [
       {
-        "id": "detective-1",
+        "id": "detective-the-vanishing-act",
         "title": "The Vanishing Act",
         "category": "Detective",
         "image": "https://plus.unsplash.com/premium_vector-1738822432483-7d6cc074d7ee?q=80&w=1214&auto=format&fit=crop",
@@ -145,7 +152,7 @@
     ],
     "Thriller": [
       {
-        "id": "thriller-1",
+        "id": "thriller-the-last-message",
         "title": "The Last Message",
         "category": "Thriller",
         "image": "https://plus.unsplash.com/premium_vector-1745193944179-53f8ba9d3bc8?q=80&w=1051&auto=format&fit=crop",
@@ -154,7 +161,7 @@
     ],
     "Mystery": [
       {
-        "id": "mystery-1",
+        "id": "mystery-the-clockwork-inheritance",
         "title": "The Clockwork Inheritance",
         "category": "Mystery",
         "image": "https://plus.unsplash.com/premium_vector-1738763747195-27132e84109c?q=80&w=1025&auto=format&fit=crop",
@@ -163,7 +170,7 @@
     ],
     "Science Fiction": [
       {
-        "id": "sci-fi-1",
+        "id": "science-fiction-the-memory-archive",
         "title": "The Memory Archive",
         "category": "Science Fiction",
         "image": "https://plus.unsplash.com/premium_vector-1734017898864-386541113bb7?q=80&w=1074&auto=format&fit=crop",
@@ -172,7 +179,7 @@
     ],
     "Fantasy": [
       {
-        "id": "fantasy-1",
+        "id": "fantasy-the-last-dragon-keeper",
         "title": "The Last Dragon Keeper",
         "category": "Fantasy",
         "image": "https://plus.unsplash.com/premium_vector-1725419752120-0d3c6baa20d4?q=80&w=1074&fit=crop&",

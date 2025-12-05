@@ -1,4 +1,4 @@
-# Short Story Web App
+# Story Verse
 
 A beautiful, animated React web application for reading short stories across multiple genres.
 
@@ -16,7 +16,7 @@ A beautiful, animated React web application for reading short stories across mul
 
 1. Navigate to the project directory:
 ```bash
-cd D:\short-story-app
+cd D:\story-verse
 ```
 
 2. Install dependencies:
@@ -47,7 +47,7 @@ npm run build
 ## Project Structure
 
 ```
-short-story-app/
+story-verse/
 ├── src/
 │   ├── components/
 │   │   ├── Home.jsx          # Home page with hero and categories
