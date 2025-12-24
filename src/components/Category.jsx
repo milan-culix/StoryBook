@@ -1,11 +1,12 @@
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { stories } from '../data/stories.json'
+import { stories, categoryImages } from '../data/stories.json'
 
 function Category() {
   const { categoryName } = useParams()
   const navigate = useNavigate()
   const decodedCategory = decodeURIComponent(categoryName)
   const categoryStories = stories[decodedCategory] || []
+  const categoryImage = categoryImages?.[decodedCategory] || '/images/categories/default.png'
 
   const handleStoryClick = (storyId) => {
     navigate(`/story/${encodeURIComponent(decodedCategory)}/${storyId}`)
@@ -39,11 +40,15 @@ function Category() {
                 className="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden bg-gray-200">
                   <img
                     src={story.image}
                     alt={story.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = categoryImage;
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>

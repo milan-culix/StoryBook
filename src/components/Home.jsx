@@ -1,15 +1,16 @@
 import { useNavigate, Link } from 'react-router-dom'
-import { categories, stories } from '../data/stories.json'
+import { categories, stories, categoryImages } from '../data/stories.json'
 
 function Home() {
   const navigate = useNavigate()
 
   const getCategoryThumbnail = (category) => {
-    const categoryStories = stories[category]
-    if (categoryStories && categoryStories.length > 0) {
-      return categoryStories[0].image
+    // Use the dedicated category image if available
+    if (categoryImages && categoryImages[category]) {
+      return categoryImages[category]
     }
-    return 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop'
+    // Fallback to default image if category image not found
+    return '/images/categories/default.jpg'
   }
 
   const handleCategoryClick = (category) => {
@@ -25,7 +26,7 @@ function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Tales & Stories
+                Story Verse
               </h1>
             </div>
             <div className="flex items-center">
@@ -50,7 +51,7 @@ function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 animate-slide-down">
-              Tales & Stories
+              Story Verse
             </h1>
             <p className="text-xl sm:text-2xl mb-8 text-purple-100 animate-slide-up">
               Discover captivating stories across genres
