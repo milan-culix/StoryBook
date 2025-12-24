@@ -18,6 +18,25 @@
     "Science Fiction",
     "Fantasy"
   ],
+  "categoryImages": {
+    "Historical": "/images/categories/historical.png",
+    "Horror": "/images/categories/horror.png",
+    "Real-life": "/images/categories/real-life.png",
+    "Fanfiction": "/images/categories/fanfiction.png",
+    "Slice of Life": "/images/categories/slice-of-life.png",
+    "Magical Realism": "/images/categories/magical-realism.png",
+    "Western": "/images/categories/western.png",
+    "Drama": "/images/categories/drama.png",
+    "Comedy": "/images/categories/comedy.png",
+    "Adventure": "/images/categories/adventure.png",
+    "Romance": "/images/categories/romance.png",
+    "Crime": "/images/categories/crime.png",
+    "Detective": "/images/categories/detective.png",
+    "Thriller": "/images/categories/thriller.png",
+    "Mystery": "/images/categories/mystery.png",
+    "Science Fiction": "/images/categories/science-fiction.png",
+    "Fantasy": "/images/categories/fantasy.png"
+  },
   "stories": {
     "Historical": [
       {
