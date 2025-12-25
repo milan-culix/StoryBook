@@ -11,7 +11,11 @@ function Admin() {
     navigate('/admin/login')
   }
   const [stories, setStories] = useState(storiesData.stories)
-  const [categories, setCategories] = useState(storiesData.categories)
+  // Extract categories from categoryImages or stories keys
+  const initialCategories = storiesData.categoryImages 
+    ? Object.keys(storiesData.categoryImages)
+    : Object.keys(storiesData.stories || {})
+  const [categories, setCategories] = useState(initialCategories)
   const [loading, setLoading] = useState(false)
   const [saving, setSaving] = useState(false)
   
@@ -39,7 +43,11 @@ function Admin() {
       if (response.ok) {
         const data = await response.json()
         setStories(data.stories)
-        setCategories(data.categories)
+        // Extract categories from categoryImages or stories keys
+        const loadedCategories = data.categoryImages 
+          ? Object.keys(data.categoryImages)
+          : (data.categories || Object.keys(data.stories || {}))
+        setCategories(loadedCategories)
       } else {
         // Fallback to local data if API fails
         console.warn('API not available, using local data')

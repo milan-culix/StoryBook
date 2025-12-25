@@ -1,8 +1,9 @@
 import { useNavigate, Link } from 'react-router-dom'
-import { categories, stories, categoryImages } from '../data/stories.json'
+import { stories, categoryImages } from '../data/stories.json'
 
 function Home() {
   const navigate = useNavigate()
+  const categories = Object.keys(stories)
 
   const getCategoryThumbnail = (category) => {
     // Use the dedicated category image if available
@@ -45,7 +46,7 @@ function Home() {
       </header>
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white">
+      <div className="relative overflow-hidden bg-gradient-to-b from-sky-600 to-violet-500 text-white">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
